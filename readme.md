@@ -4,6 +4,26 @@
 <!-- Securely collect browsing history over browsers with search capability and extras -->
 Securely collect browsing history over browsers.
 
+<!-- BEGIN gh-mutual-linking -->
+
+### Related projects
+
+- [**histbak**](https://github.com/didvc/histbak) — Scheduled, compressed, optionally encrypted backups of your browsing history, plus a viewer that makes it readable. Local only, no network access…
+- [**better-super-simple-highlighter**](https://github.com/didvc/better-super-simple-highlighter) — Better Super Simple Highlighter - a Chrome extension (MV3), text highlighting for web pages. The enhanced fork of…
+- [**simple-desktop-replay**](https://github.com/didvc/simple-desktop-replay) — Always-on rolling replay buffer for the Windows desktop: a low-overhead RAM DVR that keeps the last few minutes of screen so you can save the…
+- [**auto-input**](https://github.com/distrokid-userjs/auto-input) — Userscript that auto-fills the DistroKid upload form from a JSON preset.
+- [**discord-data-package-explorer-static**](https://github.com/didvc/discord-data-package-explorer-static) — Pure static, zero-telemetry GitHub Pages version of Discord Data Package Explorer. All processing happens in your browser.
+- [**videos-to-tomontage-thumbnails**](https://github.com/didvc/videos-to-tomontage-thumbnails) — Generate thumbnail montages from video files to quickly identify and browse your video collection
+- [**mva**](https://github.com/didvc/mva) — mva (mv-archive) - rclone backup/archiving simpler, efficient, and graceful. Just mv files to trigger automatic compression and cloud upload.
+- [**core**](https://github.com/URL-Note-Taker/core) — URL Note Taker is a userscript that allows you to take notes on any webpage. Built with Preact, it provides a modern and intuitive user interface.
+- [**ytnote**](https://github.com/didvc/ytnote) — A note taking app for YouTube and many more. Fully works on Chrome, Firefox, Safari. Built on React.js.
+- [**regex-bookmarks**](https://github.com/didvc/regex-bookmarks) — Regular-expression compatible bookmarks searching capability on Chrome
+- [**scrapbook**](https://github.com/didvc/scrapbook) — Collecting images and photos like a pro.
+- [**jseval**](https://github.com/didvc/jseval) — Evaluate JavaScript on a URL through headless Chrome browser.
+- [**note-cli**](https://github.com/didvc/note-cli) — Markdown Indexing and Pcre Regular Expression Compatible Full Text Searching for Advanced Note Takers.
+- [**Google-Search-URL-Filter**](https://github.com/didvc/Google-Search-URL-Filter) — Google Search URL Filter
+<!-- END gh-mutual-linking -->
+
 ## Getting started  
 
 Here is the getting started guide. 
