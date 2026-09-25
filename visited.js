@@ -15,7 +15,7 @@ program
   .option('-p, --port <port>', '(server) specify port number', 5555 )
   .option('-t, --timezone <timezone>', '(server) specify timezone', "Asia/Tokyo" )
   .option('-q, --quiet', '(server) disable log' )
-  .option('-s, --search', 'set command type: search ' )
+  .option('-S, --search', 'set command type: search ' )
   .option('-r, --regex', '(search) enable regex extension for search', true ) // enable by default
   .option('-u, --url <url>', '(search) search by url', "." )
   .option('--host <host>', '(search) search by host', "." )

@@ -1,27 +1,27 @@
-English · [日本語](readme-ja.md) · [繁體中文](readme-zh-TW.md) · [Deutsch](readme-de.md) · [Français](readme-fr.md)
+[English](readme.md) · 日本語 · [繁體中文](readme-zh-TW.md) · [Deutsch](readme-de.md) · [Français](readme-fr.md)
 
 # Visited-CLI
 
 <!-- Securely collect browsing history over browsers with search capability and extras -->
-Securely collect browsing history across browsers.
+ブラウザをまたいで閲覧履歴を安全に収集します。
 
-## Getting started
+## はじめに
 
-Here is the getting started guide.
+はじめ方のガイドです。
 
-Firstly, clone the repository and change to the directory.
+まず、リポジトリをクローンしてディレクトリに移動します。
 
 ```
 $ git clone https://github.com/didvc/visited && cd visited
 ```
 
-Then install the Node packages.
+次に、Nodeのパッケージをインストールします。
 
 ```
 $ npm install
 ```
 
-Next, generate a client program for the browser. Run the following.
+続いて、ブラウザ用のクライアントプログラムを生成します。次を実行してください。
 
 ```
 $ node visited.js --generate
@@ -29,19 +29,19 @@ $ node visited.js --generate
 File generated: ./visited.user.js
 ```
 
-Now that you have the `visited.user.js` file generated, copy and paste the file content as a new userscript into your favorite userscript manager, e.g. [Tampermonkey](https://www.tampermonkey.net/).
+`visited.user.js` ファイルが生成されたら、その内容をコピーして、お使いのユーザースクリプトマネージャー（例：[Tampermonkey](https://www.tampermonkey.net/)）に新しいユーザースクリプトとして貼り付けます。
 
-Also note that you can paste the same into your other browsers and Chrome profiles, and virtually integrate their browsing history in one place.
+同じものをほかのブラウザやChromeのプロファイルにも貼り付ければ、それらの閲覧履歴を事実上1か所にまとめられます。
 
-Next, start the server. Use `-s` or `--server`. Also note that `--quiet` is for running in the background, and `--port` is for specifying the port number.
+次に、サーバーを起動します。`-s` または `--server` を使います。なお、`--quiet` はバックグラウンドでの実行用、`--port` はポート番号の指定用です。
 
 ```
 $ node visited.js --server
 ```
 
-Now you're ready. Try going to any website, let's say youtube.com, and reload the page (or just visit it from the omnibox).
+これで準備完了です。どこかのウェブサイト、たとえば youtube.com にアクセスして、ページを再読み込みしてみてください（またはアドレスバーから開くだけでも構いません）。
 
-You can see the server detect your visit and automatically save the URL, host and date to the database `visited.db`.
+サーバーがアクセスを検知し、URL、ホスト、日時を自動的にデータベース `visited.db` に保存するのがわかります。
 
 ```
 $ node visited.js --server
@@ -49,7 +49,7 @@ server started...
 message: {"url":"https://www.youtube.com/","host":"www.youtube.com"}
 ```
 
-Now you can use an SQLite client such as [DB Browser for SQLite](https://sqlitebrowser.org/dl/), or the built-in search options, just like the following.
+あとは、[DB Browser for SQLite](https://sqlitebrowser.org/dl/) のようなSQLiteクライアントか、次のような組み込みの検索オプションを使えます。
 
 ```
 $ node visited.js --search --host youtube.com
@@ -64,13 +64,13 @@ $ node visited.js --search --host youtube.com
 ]
 ```
 
-The search term is regex compatible. This shows the same result as above.
+検索語は正規表現に対応しています。次のコマンドでも上と同じ結果になります。
 
 ```
 $ node visited.js --search --url 'you.*be\.com'
 ```
 
-## Requirements
+## 動作要件
 
 ```
 git
@@ -79,7 +79,7 @@ node
 sqlite3-pcre (for searching)
 ```
 
-## Help
+## ヘルプ
 
 ```
 $ node visited.js

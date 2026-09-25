@@ -1,27 +1,27 @@
-English · [日本語](readme-ja.md) · [繁體中文](readme-zh-TW.md) · [Deutsch](readme-de.md) · [Français](readme-fr.md)
+[English](readme.md) · [日本語](readme-ja.md) · 繁體中文 · [Deutsch](readme-de.md) · [Français](readme-fr.md)
 
 # Visited-CLI
 
 <!-- Securely collect browsing history over browsers with search capability and extras -->
-Securely collect browsing history across browsers.
+安全地跨瀏覽器收集瀏覽紀錄。
 
-## Getting started
+## 快速上手
 
-Here is the getting started guide.
+以下是入門指南。
 
-Firstly, clone the repository and change to the directory.
+首先，clone 儲存庫並切換到該目錄。
 
 ```
 $ git clone https://github.com/didvc/visited && cd visited
 ```
 
-Then install the Node packages.
+接著安裝 Node 套件。
 
 ```
 $ npm install
 ```
 
-Next, generate a client program for the browser. Run the following.
+然後為瀏覽器產生用戶端程式。請執行下列指令。
 
 ```
 $ node visited.js --generate
@@ -29,19 +29,19 @@ $ node visited.js --generate
 File generated: ./visited.user.js
 ```
 
-Now that you have the `visited.user.js` file generated, copy and paste the file content as a new userscript into your favorite userscript manager, e.g. [Tampermonkey](https://www.tampermonkey.net/).
+產生 `visited.user.js` 檔案後，將檔案內容複製貼上到你慣用的使用者腳本管理器（例如 [Tampermonkey](https://www.tampermonkey.net/)），作為一個新的使用者腳本。
 
-Also note that you can paste the same into your other browsers and Chrome profiles, and virtually integrate their browsing history in one place.
+另外，你也可以把同一份內容貼到其他瀏覽器與 Chrome 設定檔中，實質上將它們的瀏覽紀錄整合到同一個地方。
 
-Next, start the server. Use `-s` or `--server`. Also note that `--quiet` is for running in the background, and `--port` is for specifying the port number.
+接下來啟動伺服器。使用 `-s` 或 `--server`。另外，`--quiet` 用於在背景執行，`--port` 用於指定連接埠號碼。
 
 ```
 $ node visited.js --server
 ```
 
-Now you're ready. Try going to any website, let's say youtube.com, and reload the page (or just visit it from the omnibox).
+這樣就準備完成了。試著前往任何網站，例如 youtube.com，然後重新載入頁面（或直接從網址列造訪）。
 
-You can see the server detect your visit and automatically save the URL, host and date to the database `visited.db`.
+你會看到伺服器偵測到你的造訪，並自動將 URL、主機與日期存入資料庫 `visited.db`。
 
 ```
 $ node visited.js --server
@@ -49,7 +49,7 @@ server started...
 message: {"url":"https://www.youtube.com/","host":"www.youtube.com"}
 ```
 
-Now you can use an SQLite client such as [DB Browser for SQLite](https://sqlitebrowser.org/dl/), or the built-in search options, just like the following.
+現在你可以使用 SQLite 用戶端（例如 [DB Browser for SQLite](https://sqlitebrowser.org/dl/)），或是像下面這樣使用內建的搜尋選項。
 
 ```
 $ node visited.js --search --host youtube.com
@@ -64,13 +64,13 @@ $ node visited.js --search --host youtube.com
 ]
 ```
 
-The search term is regex compatible. This shows the same result as above.
+搜尋字串支援正規表示式。下面的指令會得到與上面相同的結果。
 
 ```
 $ node visited.js --search --url 'you.*be\.com'
 ```
 
-## Requirements
+## 需求
 
 ```
 git
@@ -79,7 +79,7 @@ node
 sqlite3-pcre (for searching)
 ```
 
-## Help
+## 說明
 
 ```
 $ node visited.js

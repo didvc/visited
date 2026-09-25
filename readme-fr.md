@@ -1,27 +1,27 @@
-English · [日本語](readme-ja.md) · [繁體中文](readme-zh-TW.md) · [Deutsch](readme-de.md) · [Français](readme-fr.md)
+[English](readme.md) · [日本語](readme-ja.md) · [繁體中文](readme-zh-TW.md) · [Deutsch](readme-de.md) · Français
 
 # Visited-CLI
 
 <!-- Securely collect browsing history over browsers with search capability and extras -->
-Securely collect browsing history across browsers.
+Collecter l’historique de navigation de plusieurs navigateurs, en toute sécurité.
 
-## Getting started
+## Prise en main
 
-Here is the getting started guide.
+Voici le guide de prise en main.
 
-Firstly, clone the repository and change to the directory.
+Tout d’abord, clonez le dépôt et placez-vous dans le répertoire.
 
 ```
 $ git clone https://github.com/didvc/visited && cd visited
 ```
 
-Then install the Node packages.
+Ensuite, installez les paquets Node.
 
 ```
 $ npm install
 ```
 
-Next, generate a client program for the browser. Run the following.
+Puis générez un programme client pour le navigateur. Exécutez la commande suivante.
 
 ```
 $ node visited.js --generate
@@ -29,19 +29,19 @@ $ node visited.js --generate
 File generated: ./visited.user.js
 ```
 
-Now that you have the `visited.user.js` file generated, copy and paste the file content as a new userscript into your favorite userscript manager, e.g. [Tampermonkey](https://www.tampermonkey.net/).
+Une fois le fichier `visited.user.js` généré, copiez son contenu et collez-le comme nouveau userscript dans votre gestionnaire de userscripts préféré, par exemple [Tampermonkey](https://www.tampermonkey.net/).
 
-Also note that you can paste the same into your other browsers and Chrome profiles, and virtually integrate their browsing history in one place.
+Notez aussi que vous pouvez coller le même script dans vos autres navigateurs et profils Chrome, et ainsi réunir virtuellement leur historique de navigation en un seul endroit.
 
-Next, start the server. Use `-s` or `--server`. Also note that `--quiet` is for running in the background, and `--port` is for specifying the port number.
+Ensuite, démarrez le serveur avec `-s` ou `--server`. Notez aussi que `--quiet` sert à l’exécuter en arrière-plan, et `--port` à indiquer le numéro de port.
 
 ```
 $ node visited.js --server
 ```
 
-Now you're ready. Try going to any website, let's say youtube.com, and reload the page (or just visit it from the omnibox).
+Tout est prêt. Allez sur n’importe quel site, par exemple youtube.com, et rechargez la page (ou ouvrez-la simplement depuis la barre d’adresse).
 
-You can see the server detect your visit and automatically save the URL, host and date to the database `visited.db`.
+Vous verrez le serveur détecter votre visite et enregistrer automatiquement l’URL, l’hôte et la date dans la base de données `visited.db`.
 
 ```
 $ node visited.js --server
@@ -49,7 +49,7 @@ server started...
 message: {"url":"https://www.youtube.com/","host":"www.youtube.com"}
 ```
 
-Now you can use an SQLite client such as [DB Browser for SQLite](https://sqlitebrowser.org/dl/), or the built-in search options, just like the following.
+Vous pouvez maintenant utiliser un client SQLite comme [DB Browser for SQLite](https://sqlitebrowser.org/dl/), ou les options de recherche intégrées, comme ceci.
 
 ```
 $ node visited.js --search --host youtube.com
@@ -64,13 +64,13 @@ $ node visited.js --search --host youtube.com
 ]
 ```
 
-The search term is regex compatible. This shows the same result as above.
+Le terme recherché est compatible avec les expressions régulières. La commande suivante donne le même résultat que ci-dessus.
 
 ```
 $ node visited.js --search --url 'you.*be\.com'
 ```
 
-## Requirements
+## Prérequis
 
 ```
 git
@@ -79,7 +79,7 @@ node
 sqlite3-pcre (for searching)
 ```
 
-## Help
+## Aide
 
 ```
 $ node visited.js
